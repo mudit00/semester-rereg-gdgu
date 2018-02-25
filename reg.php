@@ -14,7 +14,7 @@
           </style>
      </head>
      <body>
-          <h1>GD Goenka University</h1>
+          <h1>GD Goenka University </h1>
           <br><h2>REGISTRATION FORM </h2>
 <ul type="disc">
           <li><b>NAME:-</b><?php echo $_POST["name"]; ?><br></li><br>
