@@ -1,0 +1,185 @@
+`<!DOCTYPE html>
+<html>
+<head >
+	<title> Student REs.</title>
+<!--Styling with css-->
+	<style>
+ 	           input[type=text]{
+				 border-radius: 25px;
+                                 border: 200px;
+						   width:34%;
+		                       padding: 9px 20px;
+	                           }
+
+	          input[type=email]{
+				width:34%;
+				border-radius: 25px;
+                                border: 20px;
+		                      padding: 9px 20px;
+	                           }
+		      input[type=Date]{
+					  border: 20px;
+					  		 padding: 9px 20px;
+width:34%;
+							 border-radius: 25px;
+					  	 }
+						 input[type=number]{
+                                    border: 20px;
+width:34%;
+		                          padding: 9px 20px;
+		                          border-radius: 25px;
+	                          }
+                    	select{
+						  font-family:cursive;
+	                          border-radius: 25px;
+width:34%;
+			                padding: 8px 20px;
+	                    	 font-size: 18px;
+	                          }
+	                    option{
+width:34%;
+  font-family:cursive;
+		                     box-sizing:  inherit;
+text-align: center;
+						 }
+		    input[type=radio]{
+		                     border-radius:23;
+
+		                     }
+
+                         body{
+                           font-family:cursive;
+						 border-radius: 25px;
+		                     text-align: justify;
+		                     background-color: lightblue;
+		                     font-size: 25px;
+margin: 0;
+						 }
+
+}
+img{
+image-orientation:center;
+}
+	h1 {
+		text-align: center;
+		padding: 2%;
+		background-color: #fff;
+background-repeat: no-repeat;
+		}
+
+	h2 {
+		text-align:center;
+		color: #777;
+		line-height: 50px;
+	}
+	h4 {
+		text-align: center;
+		color: #437;
+	}
+
+</style>
+</head>
+<body>
+	<h1><img src="mm.png"></h1>
+	<h2>REGISTRATION</h2>
+<br>
+	<form action="reg.php" method="post">
+		<ol><li>Name of the Student<input name="name" type="text" placeholder="eg.MUDIT KHANDELWAL" required="YES"></li> <br>
+			<li> <ol type="i"><li>Father Name <input name="Fathername" placeholder=""type="text"required="YES"> </li><br>
+				<li>Occupation of Father <input name="OccupationofFather" type="text" required="YES" ></li><br>
+				<li>Father Email id. <input name="EFather" type="email" required="YES"> </li><br>
+			</ol>
+		</li>
+
+		<li> <ol type="i"><li>Mother Name <input name="Mothername" type="text" required="YES"> </li><br>
+			<li>Occupation of Mother <input name="OccupationofMother" type="text" required="YES"></li><br>
+			<li>Mother Email id. <input name="EMother" type="email" required="YES"> </li><br>
+		</ol>
+	</li>
+	<li>Enrolment No. <input name="Enrollmentno" type="number" required="YES"></li><br>
+	<li>School of <select autofocus name="School" type="text" >
+	     <option value="SOE">Engineering</option>
+          <option value="SOEd">Education</option>
+          <option value="SOH">Hospatality </option>
+		<option value="SOHS">Humanities and Social Science</option>
+		<option value="SOAP">Architecture and Planning</option>
+		<option value="SOL">Law</option>
+		<option value="SOM">Management</option>
+		<option value="SOMAS">Medical and Allied Science</option>
+		<option value="SOC">Communication</option>
+		<option value="SOFD">Fashion and Design</option>
+	</select></li><br>
+	<li> <?php if(isset("SOE")){
+		?>
+		Programme <input name="Programme" type="text"></li><br>
+		<option value="BtechMBA"> Btech+MBA</option>
+		<option value="BtechM"> Btech+Mtech</option>
+		<option value="Mtech"> Mtech</option>
+		<option value="BCA"> BCA</option>
+		<option value="BSc"> BSc</option>
+		<option value="MSc"> MSc</option>
+		<option value="Mtech"
+		> BSc</option>
+	<li>Semester <select name="Semester" type="number">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+
+</select></li><br>0
+	<li>Section <input name="Section" type="text"required="YES"></li><br>
+	<li>Additional information:<ol type="A"> <li>Domicile:</li> Haryana<input name="Domicile" type="radio"required="YES" value="Haryana">
+		other<input name="Domicile" type="radio"required="YES" value="other">
+<br>
+		<li>Stay:<br>
+			Hosteller<input name="stay" type="radio"required="YES" value="Hosteller">Day Boader<input name="stay" type="radio"required="YES" value="Day Boader">
+		</li><br></ol>
+		<li>Course(s) in which student is registering:</li>
+		<table Boader="2">
+			<tr>
+				<th> Course Code</th>
+				<th> Course title</th>
+			</tr>
+			<tr>
+				<td>  <input name="1" type="text"></td>
+				<td> <input name="a1" type="text"></td>
+			</tr>
+			<tr>
+				<td>  <input name="2" type="text"></td>
+				<td> <input name="a2" type="text"></td>
+			</tr><tr>
+				<td>  <input name="3" type="text"></td>
+				<td> <input name="a3" type="text"></td>
+			</tr><tr>
+				<td>  <input name="4" type="text"></td>
+				<td> <input name="a4" type="text"></td>
+			</tr><tr>
+				<td>  <input name="5" type="text"></td>
+				<td> <input name="a5" type="text"></td>
+			</tr><tr>
+				<td>  <input name="6" type="text"></td>
+				<td> <input name="a6" type="text"></td>
+			</tr><tr>
+				<td>  <input name="7" type="text"></td>
+				<td> <input name="a7" type="text"></td>
+			</tr>
+
+			</table>
+			<p> Date: <input name="Date" type="date"required="YES">  </p>
+			Fees Receipt enclosed : YES<input name="fees" type="radio"required="YES" value="YES"> No<input name="fees" type="radio"required="YES"value="No"><br><br>
+			Address: <input name="address" placeholder="A-1,XYZ,ABCDE"type="text" required="YES"><br><br>
+			Email Id. <input name="email" placeholder="In CAPITAL LETTERS"type="email"required="YES">
+			Mobile No. <input name="Mobile" placeholder="+91 1234567890" type="number"required="YES"><br>
+
+   <p text-align="center"> <input  type="submit" value="REGISTER"></p>
+			<h4> ONLY FOR OFFICE USE</h4>
+			Verified by <input name="faculty" type="text" disabled="YES"><br><br>
+			SIGNATURE OF DEAN <input name="DEAN" type="text" disabled="yes">
+				</body>
+				</html>
