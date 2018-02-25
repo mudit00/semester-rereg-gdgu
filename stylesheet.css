@@ -1,0 +1,72 @@
+input[type=text]{
+     border-radius: 25px;
+     border: 200px;
+     width:34%;
+     padding: 9px 20px;
+}
+
+input[type=email]{
+     width:34%;
+     border-radius: 25px;
+     border: 20px;
+     padding: 9px 20px;
+}
+input[type=Date]{
+     border: 20px;
+     padding: 9px 20px;
+     width:34%;
+     border-radius: 25px;
+}
+input[type=number]{
+     border: 20px;
+     width:34%;
+     padding: 9px 20px;
+     border-radius: 25px;
+}
+select{
+     font-family:cursive;
+     border-radius: 25px;
+     width:34%;
+     padding: 8px 20px;
+     font-size: 18px;
+}
+option{
+     width:34%;
+     font-family:cursive;
+     box-sizing:  inherit;
+     text-align: center;
+}
+input[type=radio]{
+     border-radius:23;
+
+}
+
+body{
+     font-family:cursive;
+     border-radius: 25px;
+     text-align: justify;
+     background-color: lightblue;
+     font-size: 25px;
+     margin: 0;
+}
+
+}
+img{
+     image-orientation:center;
+}
+h1 {
+     text-align: center;
+     padding: 2%;
+     background-color: #fff;
+     background-repeat: no-repeat;
+}
+
+h2 {
+     text-align:center;
+     color: #777;
+     line-height: 50px;
+}
+h4 {
+     text-align: center;
+     color: #437;
+}
