@@ -2,15 +2,19 @@
 <html>
 <head >
 	<title> Student REs.</title>
+	<meta name="viewport" content="width=device-width">
 	<!--Styling with css-->
 	<link href="stylesheet.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-	<h1><img src="mm.png"></h1>
+	<h1 clas="uline"><img src="mm.png"></h1>
 	<h2>REGISTRATION</h2>
 	<br>
 	<form action="reg.php" method="post">
-		<ol><li>Name of the Student<input name="name" type="text" placeholder="eg.MUDIT KHANDELWAL" required="YES"></li> <br>
+		<ol>
+	<li>Enrolment No. <input name="Enrollmentno" type="number" required="YES"></li><br>
+			
+			<li>Name of the Student<input name="name" type="text" placeholder="eg.MUDIT KHANDELWAL" required="YES"></li> <br>
 			<li> <ol type="i"><li>Father Name <input name="Fathername" placeholder=""type="text"required="YES"> </li><br>
 				<li>Occupation of Father <input name="OccupationofFather" type="text" required="YES" ></li><br>
 				<li>Father Email id. <input name="EFather" type="email" required="YES"> </li><br>
@@ -22,7 +26,6 @@
 			<li>Mother Email id. <input name="EMother" type="email" required="YES"> </li><br>
 		</ol>
 	</li>
-	<li>Enrolment No. <input name="Enrollmentno" type="number" required="YES"></li><br>
 	<li>School of <select autofocus name="School" type="text" >
 		<option value="SOE">Engineering</option>
 		<option value="SOEd">Education</option>
