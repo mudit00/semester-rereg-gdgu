@@ -1,99 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> Student REs.</title>
-	<meta name="viewport" content="width=device-width">
-	<!--Styling with css-->
-	<link href="stylesheet.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-	<h1 clas="uline"><img src="mm.png"></h1>
-	<h2>REGISTRATION</h2>
-	<br>
-	<form action="reg.php" method="post">
-		<ol>
-	<li>Enrollment No. <input name="Enrollmentno" type="number" required="YES"></li><br>
-			
-			<li>Name of the Student<input name="name" type="text" placeholder="eg.MUDIT KHANDELWAL" required="YES"></li><br>
-			<li> <ol type="i"><li>Father Name <input name="Fathername" placeholder=""type="text"required="YES"> </li><br>
-				<li>Occupation of Father <input name="OccupationofFather" type="text" required="YES" ></li><br>
-				<li>Father Email id. <input name="EFather" type="email" required="YES"> </li><br>
-			</ol>
-		</li>
-
-		<li> <ol type="i"><li>Mother Name <input name="Mothername" type="text" required="YES"> </li><br>
-			<li>Occupation of Mother <input name="OccupationofMother" type="text" required="YES"></li><br>
-			<li>Mother Email id. <input name="EMother" type="email" required="YES"> </li><br>
-		</ol>
-	</li>
-	<li>School of <select  id="functionlist" onchange="answerformchange" autofocus name="School" type="text" >
-		<option value="SOE">Engineering </option>
-		<option value="SOEd">Education</option>
-		<option value="SOH">Hospatality </option>
-		<option value="SOHS">Humanities and Social Science</option>
-		<option value="SOAP">Architecture and Planning</option>
-		<option value="SOL">Law</option>
-		<option value="SOM">Management</option>
-		<option value="SOMAS">Medical and Allied Science</option>
-		<option value="SOC">Communication</option>
-		<option value="SOFD">Fashion and Design</option>
-	</select></li><br>
-		<li>Semester <select name="Semester" type="number">
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5</option>
-		<option value="6">6</option>
-		<option value="7">7</option>
-		<option value="8">8</option>
-		<option value="9">9</option>
-		<option value="10">10</option>
-
-	</select></li><br>
-	<li>Section <input name="Section" type="text"required="YES"></li><br>
-	<li>Additional information:<br> <ol type="A"> <li>Domicile:</li><br> Haryana <input name="Domicile" type="radio"required="YES" value="Haryana">
-		other <input name="Domicile" type="radio"required="YES" value="other">
-		<br><br>
-		<li>Stay:<br><br>
-			Hosteller <input name="stay" type="radio"required="YES" value="Hosteller">Day Boader <input name="stay" type="radio"required="YES" value="Day Boader">
-		</li><br></ol><br>
-		<li>Course(s) in which student is registering:</li>
-		<table Boader="2">
-			<tr>
-				<th> Course Code</th>
-				<th> Course title</th>
-			</tr>
-			<tr>
-				<td>  <input name="1" type="text"></td>
-				<td> <input name="a1" type="text"></td>
-			</tr>
-			<tr>
-				<td>  <input name="2" type="text"></td>
-				<td> <input name="a2" type="text"></td>
-			</tr><tr>
-				<td>  <input name="3" type="text"></td>
-				<td> <input name="a3" type="text"></td>
-			</tr><tr>
-				<td>  <input name="4" type="text"></td>
-				<td> <input name="a4" type="text"></td>
-			</tr><tr>
-				<td>  <input name="5" type="text"></td>
-				<td> <input name="a5" type="text"></td>
-			</tr><tr>
-				<td>  <input name="6" type="text"></td>
-				<td> <input name="a6" type="text"></td>
-			</tr><tr>
-				<td>  <input name="7" type="text"></td>
-				<td> <input name="a7" type="text"></td>
-			</tr>
-
-		</table><br>
-		Date: <input name="Date" type="date"required="YES"><br>
-		Address: <input name="address" placeholder="A-1,XYZ,ABCDE"type="text" required="YES"><br>
-		Email Id. <input name="email" placeholder="In CAPITAL LETTERS"type="email"required="YES"><br>
-		Mobile No. <input name="Mobile" placeholder="+91 1234567890" type="number"required="YES"><br>
-
-		<p text-align="center"> <input  type="submit" value="REGISTER"></p>
-		</body>
-	</html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GD Goenka University Semester Re-registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    </head>
+    <body>
+        <h1 class="heading"><img src="mm.png" class="head"></h1>
+        <div class="heading"><h1>Semester Re-Registration Portal</h1></div>
+        <p>
+            please provide your enrolment number...
+            <br>
+            <form action="rendered.php" method="GET">
+                <input type="number" name="enrolmentnumber" placeholder="eg. 1xxxXXXXXXXX" required="required">
+                <p class="right">
+                    <input type="submit" value="proceed >>">
+                </p>
+            </form>
+        </p>
+    </body>
+</html>

@@ -11,7 +11,7 @@ include_once('db.php');
         <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     </head>
     <body>
-        <h1 class="heading"><img src="../mm.png" class="head"></h1>
+        <h1 class="heading"><img src="mm.png" class="head"></h1>
         <div class="heading"><h1>Semester Re-Registration Portal</h1></div>
 
         <?php

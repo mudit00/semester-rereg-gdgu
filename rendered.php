@@ -11,13 +11,11 @@ include_once('db.php');
         <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     </head>
     <body>
-        <h1 class="heading"><img src="../mm.png" class="head"></h1>
-        <div class="heading"><h1>Semester Re-Registration Details</h1></div>
+        <h1 class="heading"><img src="mm.png" class="head"></h1>
+        <div class="heading"><h1>Semester Re-Registration Portal</h1></div>
 
         <?php
-            $enrolmentNumber = $_POST['enrolmentnumber'];
-            $semester = $_POST['semester'];
-
+            $enrolmentNumber = $_GET['enrolmentnumber'];
             $sql = "SELECT * FROM $table_students WHERE enrolmentno = $enrolmentNumber;";
 
             $result = mysqli_query($database_link, $sql);
@@ -49,7 +47,7 @@ include_once('db.php');
             $domicile = $values['domicile'];
         ?>
 
-        <form>
+        <form action="registration.php" method="GET">
             <p>
                 Enrolment Number: <u><?php echo $enrolmentNumber; ?></u>
                 <input type="hidden" name="enrolmentnumber" value="<?php echo $enrolmentNumber; ?>">
@@ -78,28 +76,33 @@ include_once('db.php');
                 <li>School of <br><input type="text" disabled="disabled" value="<?php echo $school; ?>"> </li><br>
                 <li>Programme <br><input type="text" disabled="disabled" value="<?php echo $programme; ?>"> </li><br>
                 <li>Stream <br><input type="text" disabled="disabled" value="<?php echo $stream ?>"> </li><br>
-                <li>Semeseter <br><input type="text" disabled="disabled" value="<?php echo $semester; ?>"> </li><br>
                 <li>Additional information<br><br>
                     <ol type="A">
                         <li>Domicile  <br><input type="text" disabled="disabled" value="<?php echo $domicile; ?>"> </li><br>
                         <li>Stay  <br><input type="text" disabled="disabled" value="<?php echo $stay; ?>"> </li><br>
                     </ol>
                 </li>
-                <li>
-                    Course(s):
-                    <table>
-                        <tr> <th>Course Code</th> <th>Course Title</th> </tr>
-                        <?php
-                        for($i = 0; $i < count($_POST['coursecodes']); $i++) {
-                            echo "<tr><td>".$_POST['coursecodes'][$i]."</td><td>".$_POST['coursenames'][$i]."</td></tr>";
-                        }
-                        ?>
-                    </table>
-                </li>
             </ol>
-            <p class="right">
-                <input type="submit" value="print" onclick="window.print()">
+            <p>
+                please provide your semester number... 
+                <select name="semester" type="number" required="required">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <p class="right">
+                    <input type="submit" value="<< rectify info" form="rectifier">
+                    <input type="submit" value="proceed >>">
+                </p>
             </p>
         </form>
+        <form action="requestchange.html" id="rectifier"></form>
     </body>
 </html>

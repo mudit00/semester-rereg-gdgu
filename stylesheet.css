@@ -1,4 +1,92 @@
-input{
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+* {
+    font-family: 'Ubuntu';
+    color: #fff;
+}
+
+body {
+    padding: 10%;
+    background-color:cornflowerblue;
+}
+
+div.heading {
+    padding: 2%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1.heading {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border-radius: 2%;
+}
+
+img.head {
+    image-orientation: center;
+    max-width: 100%;
+}
+
+input[type=text] {
+    width: 96%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px dotted white;
+    margin: 2%;
+    font-size: 1.3em;
+    outline: none;
+}
+
+input:disabled {
+    color: #999;
+}
+
+input[type=number] {
+    width: 96%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px dotted white;
+    margin: 2%;
+    font-size: 1.3em;
+    outline: none;
+    transition: all 0.2s;
+}
+
+input[type=number]:focus {
+    font-size: 1.6em;
+}
+
+input[type=submit] {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Ubuntu';
+    border: none;
+    font-size: 1.5em;
+    padding: 1%;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+p.right {
+    text-align: right;
+}
+
+table {
+    margin: 5%;
+}
+
+table td {
+    padding: 2%;
+}
+
+/* --------- */
+
+/* input{
     background-color:whitesmoke;
 }
 input[type=text]{
@@ -71,33 +159,4 @@ option{
     }
 input[type=radio]{
      border-radius:23;
-}
-body{
-     font-family:sans-serif;
-     border-radius: 25px;
-     text-align: justify;
-     background-color:cornflowerblue;
-     font-size: 25px;
-     margin: 0;
-}
-img{
-     image-orientation:center;
-}
-h1 {
-     text-align: center;
-     padding: 2%;
-     background-color:white;
-     background-repeat: no-repeat;
-     margin: 0;
-     text-decoration-style: solid;
-}
-
-h2 {
-     text-align:center;
-     color: black;
-     line-height: 50px;
-}
-h4 {
-     text-align: center;
-     color: #437;
-}
+} */
