@@ -12,4 +12,4 @@ if($database_link == false) {
 
 $table_students = 'studentsinfo';
 $table_courses = 'courses';
-$table_grievances = 'grievances';
+$table_reregistrations = 'coursesreregistration';
