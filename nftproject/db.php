@@ -1,6 +1,6 @@
 <?php
 $database_username = "root";
-$database_password = "smahi3003";
+$database_password = "tomcat2k16";
 $database_host = "127.0.0.1";
 $database_name = "REGISTRATION";
 
@@ -9,3 +9,7 @@ $database_link = mysqli_connect($database_host, $database_username, $database_pa
 if($database_link == false) {
     die("Connection to database could not be established.");
 }
+
+$table_students = 'studentsinfo';
+$table_courses = 'courses';
+$table_grievances = 'grievances';
