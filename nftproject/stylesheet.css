@@ -39,6 +39,9 @@ input[type=text] {
     margin: 2%;
     font-size: 1.3em;
     outline: none;
+}
+
+input:disabled {
     color: #999;
 }
 
@@ -71,6 +74,14 @@ input[type=submit]:hover {
 
 p.right {
     text-align: right;
+}
+
+table {
+    margin: 5%;
+}
+
+table td {
+    padding: 2%;
 }
 
 /* --------- */
