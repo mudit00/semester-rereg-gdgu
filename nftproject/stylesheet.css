@@ -28,7 +28,18 @@ h1.heading {
 
 img.head {
     image-orientation: center;
-    max-width: 90vw;
+    max-width: 100%;
+}
+
+input[type=text] {
+    width: 96%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px dotted white;
+    margin: 2%;
+    font-size: 1.3em;
+    outline: none;
+    color: #999;
 }
 
 input[type=number] {
@@ -39,6 +50,11 @@ input[type=number] {
     margin: 2%;
     font-size: 1.3em;
     outline: none;
+    transition: all 0.2s;
+}
+
+input[type=number]:focus {
+    font-size: 1.6em;
 }
 
 input[type=submit] {
@@ -55,10 +71,6 @@ input[type=submit]:hover {
 
 p.right {
     text-align: right;
-}
-
-u {
-    font-size: 1.2em;
 }
 
 /* --------- */
