@@ -1,6 +1,6 @@
 <?php
 $database_username = "root";
-$database_password = "tomcat2k16";
+$database_password = "smahi3003";
 $database_host = "127.0.0.1";
 $database_name = "REGISTRATION";
 
