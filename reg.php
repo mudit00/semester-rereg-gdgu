@@ -3,21 +3,22 @@
      <head>
           <meta charset="utf-8">
           <title> REGISTRATION</title>
+          <meta name="viewport" content="width=device-width">
+	<!--Styling with css-->
+	<link href="stylesheetphp.css" type="text/css" rel="stylesheetphp">
           <style>
 
      	h1 {
      		text-align: center;
-     	}
-          h2 {
-          color: #932
-}
+         }
           </style>
      </head>
      <body>
-          <h1>GD Goenka University </h1>
+          <h1 <img src="mm.png">GD Goenka University  </h1><br>
           <br><h2>REGISTRATION FORM </h2>
-<ul type="disc">
-          <li><b>NAME:-</b><?php echo $_POST["name"]; ?><br></li><br>
+<br>
+ <ul type="disc">
+          <li><b>NAME:-</b>  <?php echo $_POST["name"]; ?><br></li><br>
           <li><b>FATHER NAME:-</b><?php echo $_POST["Fathername"];?></li>
             <ol type="i"><li> <b>OCCUPATION OF FATHER:-</b> <?php echo $_POST["OccupationofFather"];?></li>
                  <li><b>EMAIL ID :-</b> <?php echo$_POST["EFather"]; ?></li>
@@ -113,8 +114,6 @@ echo $_POST["a7"];
    </tr>
 </table>
 </b><br>
-<li><b>Fees Receipt enclosed : </b><?php echo $_POST["fees"]; ?>
-</li>
 
  <button onClick="window.print()">Print</button>
 </body>

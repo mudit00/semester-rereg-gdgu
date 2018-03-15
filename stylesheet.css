@@ -1,25 +1,40 @@
 input{
-    background-color: rgba(0, 0, 0, 0);
+    background-color:whitesmoke;
 }
 input[type=text]{
      border-radius: 25px;
      border: 200px;
      width:34%;
      padding: 9px 20px;
-}
+     transition: all 2s;
+    }
+    input[type=text]:focus{
+        width: 45%;
+        font-size: 25px;
+    }
 
 input[type=email]{
      width:34%; 
      border-radius: 25px;
      border: 20px;
      padding: 9px 20px;
-}
+     transition: all 2s;
+    }
+    input[type=email]:focus{
+        width: 45%;
+        font-size: 25px;
+    }
 input[type=Date]{
      border: 20px;
      padding: 9px 20px;
      width:34%;
      border-radius: 25px;
-}
+     transition: all 2s;
+    }
+    input[type=date]:focus{
+        width: 45%;
+        font-size: 25px;
+    }
 input[type=number]{
      border: 20px;
      width:34%;
@@ -36,23 +51,32 @@ select{
      border-radius: 25px;
      width:34%;
      padding: 8px 20px;
-     font-size: 18px;
-}
+     font-size:25px;
+     transition: all 2s;
+    }
+   select:focus{
+        width: 45%;
+        font-size: 25px;
+    }
 option{
      width:34%;
      font-family:sans-serif;
      box-sizing:  inherit;
      text-align: center;
-}
+     transition: all 2s;
+    }
+    option:focus{
+        width: 45%;
+        font-size: 25px;
+    }
 input[type=radio]{
      border-radius:23;
-
 }
 body{
      font-family:sans-serif;
      border-radius: 25px;
      text-align: justify;
-     background-color: lightblue;
+     background-color:cornflowerblue;
      font-size: 25px;
      margin: 0;
 }
@@ -62,14 +86,15 @@ img{
 h1 {
      text-align: center;
      padding: 2%;
-     background-color: #fff;
+     background-color:white;
      background-repeat: no-repeat;
      margin: 0;
+     text-decoration-style: solid;
 }
 
 h2 {
      text-align:center;
-     color: #777;
+     color: black;
      line-height: 50px;
 }
 h4 {
